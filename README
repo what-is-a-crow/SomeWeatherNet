@@ -1,1 +1,3 @@
-Testing
+The source code for the next version of SomeWeather.com. Built on ASP.NET MVC and using RavenDB (at least initially), this project is one of self-education; I intend to reinforce the ASP.NET MVC concepts with which I am already familiar and to explore the areas with which I am not.
+
+All input is welcome.
