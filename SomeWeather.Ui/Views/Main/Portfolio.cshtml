@@ -1,0 +1,9 @@
+﻿@using SomeWeather.Domain
+@model IEnumerable<PortfolioItem>
+@foreach (var item in Model){
+<div>
+    Client: @item.ClientName<br />
+    Description: @item.Description<br />
+    Url: @item.Url
+</div>
+}
