@@ -1,5 +1,9 @@
 ﻿@using SomeWeather.Domain
 @model IEnumerable<PortfolioItem>
+@section Prerequisites {
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.jqote2.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/portfolio.js")"></script>
+}
 @foreach (var item in Model){
 <div>
     Client: @item.ClientName<br />
@@ -7,3 +11,19 @@
     Url: @item.Url
 </div>
 }
+<div id="portfolio">
+    <div class="loading">
+        <div>
+        	Loading<span id="ellipsesPortfolio"></span>        </div>
+    </div>
+</div><div id="overlay">    <div id="popup"></div></div>
+<div id="tooltip">    <div id="tooltip_crown"></div>    <div id="portfolio_detail"></div></div>
+<noscript>
+    <br /><br />
+    <h2>Sorry!</h2>
+    <div class="center">
+        This page requires that Javascript be enabled in your browser to be displayed 
+        properly. Please enable Javascript in your browser (or <a href="http://www.google.com/chrome" target="_blank">download a browser that supports
+        Javascript</a>) and reload the page.
+    </div>
+</noscript>

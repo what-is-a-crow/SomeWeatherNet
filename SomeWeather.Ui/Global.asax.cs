@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -15,7 +16,7 @@ namespace SomeWeather.Ui
     public class MvcApplication : HttpApplication
     {
         private static NLog.Logger _log = NLog.LogManager.GetCurrentClassLogger();
-        //private static DocumentStore _documentStore = new DocumentStore();
+        private static DocumentStore _documentStore = new DocumentStore();
 
         private static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
@@ -25,6 +26,8 @@ namespace SomeWeather.Ui
         private static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute("Main", "{action}", new {controller = "Main", action = "Index"});
 
             routes.MapRoute(
                 "Default",
@@ -41,6 +44,9 @@ namespace SomeWeather.Ui
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            _documentStore.Url = ConfigurationManager.AppSettings[Constants.Config.DbUrl];
+            _documentStore.Initialize();
 
             var container = ConfigureIoC();
             DependencyResolver.SetResolver(new StructureMapDependencyResolver(container));
@@ -62,7 +68,7 @@ namespace SomeWeather.Ui
                         });
                     registry.For(typeof(IRepository<>)).Use(typeof(RavenRepository<>));
 
-                    registry.For<IDocumentStore>().Use(new DocumentStore());
+                    registry.For<IDocumentStore>().Use(_documentStore);
                     registry.For<IDocumentSession>().Use<DocumentSession>();
                 });
 

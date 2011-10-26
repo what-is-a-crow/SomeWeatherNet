@@ -14,3 +14,36 @@
 2011-10-22 19:24:30.6894|INFO|SomeWeather.Ui.MvcApplication|Application starting.
 2011-10-22 19:31:24.8261|INFO|SomeWeather.Ui.MvcApplication|Application starting.
 2011-10-22 19:39:28.9990|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:30:15.5634|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:31:09.5371|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:32:35.9267|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:33:57.5576|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:34:16.2050|ERROR|Raven.Client.Connection.ReplicationInformer|Could not contact master for new replication information
+2011-10-25 19:38:40.6904|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:38:50.0888|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 19:38:51.3623|ERROR|Raven.Client.Connection.ReplicationInformer|Could not contact master for new replication information
+2011-10-25 19:41:40.0791|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 19:42:07.1582|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 19:44:49.0449|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 19:44:49.2509|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 19:45:13.7099|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 19:45:16.0458|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 19:45:16.1162|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:06:19.3193|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 20:06:21.5009|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:06:21.7050|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:06:46.4072|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:06:46.5156|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:11:19.0224|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 20:11:20.1259|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:11:20.1953|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:12:04.6562|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:12:04.6777|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:12:07.0048|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:12:07.0283|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:13:26.7753|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 20:15:05.3232|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-25 20:15:07.7167|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:15:07.9003|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-25 20:26:26.4853|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-25 20:26:26.5302|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results

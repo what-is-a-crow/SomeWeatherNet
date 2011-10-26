@@ -9,7 +9,7 @@ namespace SomeWeather.Domain
         DateTime Updated { get; set; }
     }
 
-    public abstract class EntityBase : IEntity
+    public abstract class Entity : IEntity
     {
         public int Id { get; set; }
 

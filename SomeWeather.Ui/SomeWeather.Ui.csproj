@@ -48,6 +48,7 @@
       <HintPath>..\libs\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
@@ -61,8 +62,58 @@
     <Compile Include="Utility\StructureMapDependencyResolver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\bgcontent.png" />
+    <Content Include="Content\images\bgdetails.png" />
+    <Content Include="Content\images\bgfooter.png" />
+    <Content Include="Content\images\bgheader.png" />
+    <Content Include="Content\images\bgnav.png" />
+    <Content Include="Content\images\bgnav_OLD.png" />
+    <Content Include="Content\images\bgoverlay.png" />
+    <Content Include="Content\images\bgtwitter.png" />
+    <Content Include="Content\images\chrome.png" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\cloud.png" />
+    <Content Include="Content\images\design.png" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\jquery.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\nav copy.png" />
+    <Content Include="Content\images\nav.png" />
+    <Content Include="Content\images\popupcrown.png" />
+    <Content Include="Content\images\portfolio\ai.png" />
+    <Content Include="Content\images\portfolio\ai_small.png" />
+    <Content Include="Content\images\portfolio\bah.png" />
+    <Content Include="Content\images\portfolio\bah_small.png" />
+    <Content Include="Content\images\portfolio\clc.png" />
+    <Content Include="Content\images\portfolio\clc_small.png" />
+    <Content Include="Content\images\portfolio\cr.png" />
+    <Content Include="Content\images\portfolio\cr_small.png" />
+    <Content Include="Content\images\portfolio\dgl.png" />
+    <Content Include="Content\images\portfolio\dgl_small.png" />
+    <Content Include="Content\images\portfolio\fpe.png" />
+    <Content Include="Content\images\portfolio\fpe_small.png" />
+    <Content Include="Content\images\portfolio\jm.png" />
+    <Content Include="Content\images\portfolio\jm_small.png" />
+    <Content Include="Content\images\portfolio\mo.png" />
+    <Content Include="Content\images\portfolio\mo_small.png" />
+    <Content Include="Content\images\portfolio\oe.png" />
+    <Content Include="Content\images\portfolio\oe_small.png" />
+    <Content Include="Content\images\portfolio\pp.png" />
+    <Content Include="Content\images\portfolio\pp_small.png" />
+    <Content Include="Content\images\portfolio\se.png" />
+    <Content Include="Content\images\portfolio\se_small.png" />
+    <Content Include="Content\images\portfolio\vlj.png" />
+    <Content Include="Content\images\portfolio\vlj_small.png" />
+    <Content Include="Content\images\programming.png" />
+    <Content Include="Content\images\twittertail.png" />
+    <Content Include="Content\images\umbrella.png" />
+    <Content Include="Content\images\wordpress.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\style.css" />
+    <Content Include="Scripts\jquery.jqote2.min.js" />
+    <Content Include="Scripts\portfolio.js" />
+    <Content Include="Scripts\script.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -73,7 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SomeWeather.Core\SomeWeather.Core.csproj">
@@ -99,7 +149,17 @@
   <ItemGroup>
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Main\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Main\Contact.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\portfolio.tpl" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

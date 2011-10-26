@@ -17,7 +17,9 @@ namespace SomeWeather.Ui.Utility
 
         public object GetService(Type serviceType)
         {
-            return _container.TryGetInstance(serviceType);
+            return (serviceType.IsAbstract || serviceType.IsInterface)
+                ? _container.TryGetInstance(serviceType)
+                : _container.GetInstance(serviceType);
         }
 
         public IEnumerable<object> GetServices(Type serviceType)

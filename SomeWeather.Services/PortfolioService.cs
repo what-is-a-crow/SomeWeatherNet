@@ -26,11 +26,8 @@ namespace SomeWeather.Services
 
         public Response CreateItem(PortfolioItem item)
         {
-            using (var session = UnitOfWork.Begin())
-            {
-                _repository.Create(item);
-                session.Commit();
-            }
+            _repository.Save(item);
+            _repository.SaveChanges();
             return new Response { Success = true };
         }
     }

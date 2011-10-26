@@ -11,18 +11,18 @@ namespace SomeWeather.Db
         T Get(int id);
         T Get(Func<T, bool> predicate);
         IEnumerable<T> GetAll();
-        void Create(T entity);
         void Save(T entity);
         void Delete(T entity);
+        void SaveChanges();
     }
 
     public class RavenRepository<T> : IRepository<T> where T : IEntity
     {
         private readonly IDocumentSession _session;
 
-        public RavenRepository(IDocumentSession session)
+        public RavenRepository(IDocumentStore store)
         {
-            _session = session;
+            _session = store.OpenSession();
         }
 
         public T Get(int id)
@@ -40,11 +40,6 @@ namespace SomeWeather.Db
             return _session.Query<T>();
         }
 
-        public void Create(T entity)
-        {
-            _session.Store(entity);
-        }
-
         public void Save(T entity)
         {
             _session.Store(entity);
@@ -53,6 +48,11 @@ namespace SomeWeather.Db
         public void Delete(T entity)
         {
             _session.Delete(entity);
+        }
+
+        public void SaveChanges()
+        {
+            _session.SaveChanges();
         }
     }
 }

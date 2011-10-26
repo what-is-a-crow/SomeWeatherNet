@@ -1,6 +1,6 @@
 ﻿namespace SomeWeather.Domain
 {
-    public class PortfolioItem : EntityBase
+    public class PortfolioItem : Entity
     {
         public string ThumbnailPath { get; set; }
 
