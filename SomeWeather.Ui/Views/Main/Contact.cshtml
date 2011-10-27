@@ -1,1 +1,58 @@
-﻿@{ ViewBag.Title = "Contact"; }
+﻿@model SomeWeather.Ui.Models.ContactModel
+@{ ViewBag.Title = "Contact"; }
+<noscript>
+    <h2>Sorry!</h2>
+    <div class="center">
+        This website requires that Javascript be enabled in your browser to be displayed
+        properly. Please enable Javascript in your browser (or <a href="http://www.google.com/chrome" target="_blank">
+        download a browser that supports Javascript</a>) and reload the page.
+    </div>
+</noscript>
+@using (Html.BeginForm()) {
+    <div id="contact">
+        <div id="form_wrapper">
+            <div class="contacttext">
+                Fields marked with an asterisk ( <span class="asterisk">*</span>) are required.
+            </div>
+            <div class="row">
+                <div class="title">
+                    <span class="asterisk">*</span>Name
+                </div>
+                <div class="input">
+                    @Html.TextBoxFor(m => m.Name)
+                    @Html.ValidationMessageFor(m => m.Name)
+                </div>
+            </div>
+            <div class="row">
+                <div class="title">
+                    <span class="asterisk">*</span>Email
+                </div>
+                <div class="input">
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+            </div>
+            <div class="row">
+                <div class="title">
+                    Company Name
+                </div>
+                <div class="input">
+                    @Html.TextBoxFor(m => m.CompanyName)
+                    @Html.ValidationMessageFor(m => m.CompanyName)
+                </div>
+            </div>
+            <div class="row">
+                <div class="title">
+                    <span class="asterisk">*</span>Body
+                </div>
+                <div class="input">
+                    @Html.TextAreaFor(m => m.Message, new { rows = 15 })
+                    @Html.ValidationMessageFor(m => m.Message)
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" name="submit" value="Submit" onclick="return SendMail();" />
+            </div>
+        </div>
+    </div>
+}

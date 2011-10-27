@@ -13,38 +13,40 @@
     @RenderSection("Prerequisites", false)
 </head>
 <body>
-    <div id="wrapper">        <div id="header">
+    <div id="wrapper">
+        <div id="header">
         	<div id="logo">
         		<a href="/">
 					<img src="@Url.Content("~/Content/images/logo.png")" alt="Some Weather Web Design & Programming" />
 				</a>
             </div>
 			<div id="nav">
-				<a href="/blog"><div id="nav_blog"></div></a>
-				<a href="/contact"><div id="nav_contact"></div></a>
-				<a href="/about"><div id="nav_info"></div></a>
-				<a href="/portfolio"><div id="nav_portfolio" class="current"></div></a>
+				<a href="@Url.Action("Index", "Blog")"><div id="nav_blog"></div></a>
+				<a href="@Url.Action("Contact", "Main")"><div id="nav_contact"></div></a>
+				<a href="@Url.Action("About", "Main")"><div id="nav_info"></div></a>
+				<a href="@Url.Action("Index", "Main")"><div id="nav_portfolio" class="current"></div></a>
 				<div class="clear"></div>
             </div>
         </div>
         <div id="content">	
-            @RenderBody()        </div>
+            @RenderBody()
+        </div>
         <div class="push"></div>
     </div>
 	<div id="footer">
 		<div id="left">
 			<ul>
 				<li class="wBorder">
-					<a href="/portfolio">Portfolio</a>
+					<a href="@Url.Action("Index", "Main")">Portfolio</a>
 				</li>
 				<li class="wBorder">
-					<a href="/about">Info</a>
+					<a href="@Url.Action("About", "Main")">Info</a>
 				</li>
 				<li class="wBorder">
-					<a href="/contact">Contact</a>
+					<a href="@Url.Action("Contact", "Main")">Contact</a>
 				</li>
 				<li>
-					<a href="/blog">Blog</a>
+					<a href="@Url.Action("Index", "Blog")">Blog</a>
 				</li>
 			</ul>
 			<div class="clear"></div>

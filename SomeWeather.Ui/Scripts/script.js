@@ -7,13 +7,13 @@ $(function() {
 });
 
 function SendMail() {
-	var email = $('#txtEmail').val();
-	var content = $('#txtContent').val();
-	if (email == '' || content == '') 
-		{
-		alert('Email and Content are both required.');
-		return false;
-		}
+//	var email = $('#txtEmail').val();
+//	var content = $('#txtContent').val();
+//	if (email == '' || content == '') 
+//		{
+//		alert('Email and Content are both required.');
+//		return false;
+//		}
 	alert('Thank you. Your message is being sent.');
 	return true;
 }

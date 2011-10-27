@@ -66,11 +66,11 @@ h2 { color:#1b75bc; text-align:center; }
 .contacttext { text-align:center; font-size:.8em; font-weight:200; font-style:italic; }
 .asterisk { color:#e44848; font-style:normal; }
 .row { margin:10px; }
-.formtitle { float:left; width:250px; height:20px; text-align:right; padding:5px 15px 5px 0; border-bottom:dotted 1px #bbc9dd; }
-.forminput { float:left; width:350px; margin-left:10px; }
-.forminput input { height:25px; width:200px; font-size:1.2em; }
+form .title { float:left; width:250px; height:20px; text-align:right; padding:5px 15px 5px 0; border-bottom:dotted 1px #bbc9dd; }
+form .input { float:left; width:350px; margin-left:10px; }
+form .input input { height:25px; width:200px; font-size:1.2em; }
 #txtContent { height:125px; width:200px; }
-.formbutton input { margin-left:285px; width:200px; height:30px; }
+form .button input { margin-left:285px; width:200px; height:30px; }
 
 /* Blog */
 .tags { color:#606069 }

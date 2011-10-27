@@ -47,3 +47,17 @@
 2011-10-25 20:15:07.9003|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
 2011-10-25 20:26:26.4853|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
 2011-10-25 20:26:26.5302|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-26 19:07:31.6972|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-26 19:07:35.1513|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-26 19:07:37.0078|ERROR|Raven.Client.Connection.ReplicationInformer|Could not contact master for new replication information
+2011-10-26 19:08:39.8886|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-26 19:08:41.2001|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-26 19:10:22.9140|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-26 19:10:24.1396|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-26 19:10:24.2958|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-26 19:11:06.4921|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-26 19:11:09.1894|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-26 19:11:09.2705|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
+2011-10-26 19:18:39.8457|INFO|SomeWeather.Ui.MvcApplication|Application starting.
+2011-10-26 19:18:40.7548|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Executing query '' on index 'dynamic/PortfolioItems' in 'http://localhost:8080'
+2011-10-26 19:18:40.9482|DEBUG|Raven.Client.Document.SessionOperations.QueryOperation|Query returned 0/0 results
